@@ -37,7 +37,7 @@ deploy_staging:
         - release
     environment: develop
 ```
-- 说明
+- 说明：
 我们只有一个stage是deploy。only指定了只有在masterh或者develop分支push的时候才会被执行。tags是release，对应了刚才注册runner的时候的tags。script部分deploy和node_build shell指令。
 
 ## shell
@@ -102,7 +102,7 @@ else
 fi
 ```
 增加执行权限 chmod +x ~/deploy ~/node_build
-本项目已laravel为例，npm和composer用户自行安装
+本项目以laravel为例，npm和composer用户自行安装
 
 ## 配置ssh登录
 ```
